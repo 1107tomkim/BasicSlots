@@ -117,6 +117,10 @@ namespace BasicSlots
                 label3.Text = "Win: " + total.ToString();
                 label1.Text = "Credits: " + credits.ToString();
             }
+            else
+            {
+                MessageBox.Show("Insufficient Credits.");
+            }
         }
     }
 }
