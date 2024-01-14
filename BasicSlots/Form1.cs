@@ -51,5 +51,52 @@ namespace BasicSlots
                 return random.Next(mix, max);
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Make sure that there are sufficient credits.
+            if (credits >= bet)
+            {
+                // managing credits and updating the credits including the UI
+                credits  =  credits - bet;
+                label1.Text = "Credits: " + credits.ToString();
+
+                // randomizing the picture generator
+                for (int i = 0; i < 10; i++)
+                {
+                    p1 = IntUtil.Random(1, 4);
+                    p2 = IntUtil.Random(1, 4);
+                    p3 = IntUtil.Random(1, 4);
+                }
+
+
+                // Setting img in slots to match randomized number +  saved png image.
+                if(pictureBox1.Image != null)
+                {
+                    pictureBox1.Image.Dispose();
+                    pictureBox1.Image = Image.FromFile(p1.ToString() + ".png");
+                }
+
+                if (pictureBox2.Image != null)
+                {
+                    pictureBox2.Image.Dispose();
+                    pictureBox2.Image = Image.FromFile(p2.ToString() + ".png");
+                }
+
+                if (pictureBox3.Image != null)
+                {
+                    pictureBox3.Image.Dispose();
+                    pictureBox3.Image = Image.FromFile(p3.ToString() + ".png");
+                }
+
+                total = 0;
+
+                //
+            }
+            else
+            {
+
+            }
+        }
     }
 }
