@@ -21,7 +21,7 @@ namespace BasicSlots
         public static int p1;
         public static int p2;
         public static int p3;
-         
+
         // Declaring variables for display
         public static long credits = 100;
         public static long total = 0;
@@ -47,7 +47,7 @@ namespace BasicSlots
 
             public static int Random(int mix, int max)
             {
-                Init(); 
+                Init();
                 return random.Next(mix, max);
             }
         }
@@ -58,7 +58,7 @@ namespace BasicSlots
             if (credits >= bet)
             {
                 // managing credits and updating the credits including the UI
-                credits  =  credits - bet;
+                credits = credits - bet;
                 label1.Text = "Credits: " + credits.ToString();
 
                 // randomizing the picture generator
@@ -71,7 +71,7 @@ namespace BasicSlots
 
 
                 // Setting img in slots to match randomized number +  saved png image.
-                if(pictureBox1.Image != null)
+                if (pictureBox1.Image != null)
                 {
                     pictureBox1.Image.Dispose();
                     pictureBox1.Image = Image.FromFile(p1.ToString() + ".png");
@@ -91,11 +91,28 @@ namespace BasicSlots
 
                 total = 0;
 
-                //
-            }
-            else
-            {
+                // Constructing the logic for paytable.
+                // If first 2 slot matches, payout 3 creds.
+                if ((p1 == 1 & p2 == 1) || (p1 == 2 & p2 == 2) || (p1 == 3 & p2 == 3))
+                {
+                    total += 5;
+                }
+                if (p1 == 1 & p2 == 1 & p3 == 1)
+                {
+                    total += 10;
+                }
+                if (p1 == 2 & p2 == 2 & p2 == 2)
+                {
+                    total += 20;
+                }
+                if (p1 == 3 & p2 == 3 & p2 == 3)
+                {
+                    total += 30;
+                }
 
+                credits += total;
+                label3.Text = "Win: " + total.ToString();
+                label1.Text = "Credits: " + credits.ToString();
             }
         }
     }
