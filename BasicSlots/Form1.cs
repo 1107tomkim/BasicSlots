@@ -16,5 +16,12 @@ namespace BasicSlots
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBox1.Image = Image.FromFile("1.png");
+            pictureBox2.Image = Image.FromFile("2.png");
+            pictureBox3.Image = Image.FromFile("3.png");
+        }
     }
 }
