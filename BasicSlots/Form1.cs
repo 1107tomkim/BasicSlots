@@ -120,13 +120,13 @@ namespace BasicSlots
 
                 if (p1 == 3 & p2 == 3)
                 {
-                    if (p1 == 1 & p2 == 1 & p3 == 1)
+                    if (p1 == 3 & p2 == 3 & p3 == 3)
                     {
-                        total += 10;
+                        total += 50;
                     }
                     else
                     {
-                        total += 5;
+                        total += 10;
                     }
                 }
 
