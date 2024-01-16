@@ -21,6 +21,7 @@ namespace BasicSlots
         public static int p1;
         public static int p2;
         public static int p3;
+        public static int p4;
 
         // Declaring variables for display
         public static long credits = 100;
@@ -31,8 +32,8 @@ namespace BasicSlots
         {
             // Assigns each indivdual boxes with the respective img files.
             pictureBox1.Image = Image.FromFile("1.png");
-            pictureBox2.Image = Image.FromFile("2.png");
-            pictureBox3.Image = Image.FromFile("3.png");
+            pictureBox2.Image = Image.FromFile("1.png");
+            pictureBox3.Image = Image.FromFile("1.png");
         }
 
         // Random Number Generator
@@ -64,9 +65,9 @@ namespace BasicSlots
                 // randomizing the picture generator
                 for (int i = 0; i < 10; i++)
                 {
-                    p1 = IntUtil.Random(1, 4);
-                    p2 = IntUtil.Random(1, 4);
-                    p3 = IntUtil.Random(1, 4);
+                    p1 = IntUtil.Random(1, 5);
+                    p2 = IntUtil.Random(1, 5);
+                    p3 = IntUtil.Random(1, 5);
                 }
 
 
@@ -93,7 +94,7 @@ namespace BasicSlots
 
                 // Constructing the logic for paytable.
                 // If first 2 slot matches, payout 3 creds.
-                if ((p1 == 1 & p2 == 1) || (p1 == 2 & p2 == 2) || (p1 == 3 & p2 == 3))
+                if ((p1 == 1 & p2 == 1) || (p1 == 2 & p2 == 2) || (p1 == 3 & p2 == 3) || (p1 == 4 & p2 == 4))
                 {
                     if (p1 == 1 & p2 == 1 & p3 == 1)
                     {
@@ -104,6 +105,10 @@ namespace BasicSlots
                         total += 20;
                     }
                     else if (p1 == 3 & p2 == 3 & p3 == 3)
+                    {
+                        total += 50;
+                    }
+                    else if (p1 == 4 & p2 == 4 & p3 == 4)
                     {
                         total += 30;
                     }
