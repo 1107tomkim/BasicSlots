@@ -106,7 +106,7 @@ namespace BasicSlots
                     }
                 }
 
-                if (p1 == 2 & p2 == 2)
+                else if (p1 == 2 & p2 == 2)
                 {
                     if (p1 == 2 & p2 == 2 & p3 == 2)
                     {
@@ -118,7 +118,7 @@ namespace BasicSlots
                     }
                 }
 
-                if (p1 == 3 & p2 == 3)
+                else if (p1 == 3 & p2 == 3)
                 {
                     if (p1 == 3 & p2 == 3 & p3 == 3)
                     {
@@ -130,7 +130,7 @@ namespace BasicSlots
                     }
                 }
 
-                if (p1 == 4 & p2 == 4)
+                else if (p1 == 4 & p2 == 4)
                 {
                     if (p1 == 4 & p2 == 4 & p3 == 4)
                     {
@@ -140,6 +140,10 @@ namespace BasicSlots
                     {
                         total += 7;
                     }
+                }
+                else
+                {
+                    total += 0;
                 }
 
                 credits += total;
