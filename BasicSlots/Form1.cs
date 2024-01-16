@@ -94,23 +94,47 @@ namespace BasicSlots
 
                 // Constructing the logic for paytable.
                 // If first 2 slot matches, payout 3 creds.
-                if ((p1 == 1 & p2 == 1) || (p1 == 2 & p2 == 2) || (p1 == 3 & p2 == 3) || (p1 == 4 & p2 == 4))
+                if (p1 == 1 & p2 == 1)
                 {
                     if (p1 == 1 & p2 == 1 & p3 == 1)
                     {
                         total += 10;
                     }
-                    else if (p1 == 2 & p2 == 2 & p3 == 2)
+                    else
+                    {
+                        total += 5;
+                    }
+                }
+
+                if (p1 == 2 & p2 == 2)
+                {
+                    if (p1 == 2 & p2 == 2 & p3 == 2)
                     {
                         total += 20;
                     }
-                    else if (p1 == 3 & p2 == 3 & p3 == 3)
+                    else
                     {
-                        total += 50;
+                        total += 7;
                     }
-                    else if (p1 == 4 & p2 == 4 & p3 == 4)
+                }
+
+                if (p1 == 3 & p2 == 3)
+                {
+                    if (p1 == 1 & p2 == 1 & p3 == 1)
                     {
-                        total += 30;
+                        total += 10;
+                    }
+                    else
+                    {
+                        total += 5;
+                    }
+                }
+
+                if (p1 == 1 & p2 == 1)
+                {
+                    if (p1 == 1 & p2 == 1 & p3 == 1)
+                    {
+                        total += 10;
                     }
                     else
                     {
