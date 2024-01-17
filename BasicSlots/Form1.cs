@@ -146,9 +146,49 @@ namespace BasicSlots
                 {
                     if (p1 == 5 & p2 == 1)
                     {
-                        total += 7;
+                        if (p1 == 5 & p2 == 1 & p3 == 1)
+                        {
+                            total += 10;
+                        }
+                        else
+                        {
+                            total += 7;
+                        }
                     }
-                    else if (p1 == 5 & p2 == 2)
+                    if (p1 == 5 & p2 == 2)
+                    {
+                        if (p1 == 5 & p2 == 2 & p3 == 2)
+                        {
+                            total += 20;
+                        }
+                        else
+                        {
+                            total += 7;
+                        }
+                    }
+                    if (p1 == 5 & p2 == 3)
+                    {
+                        if (p1 == 5 & p2 == 3 & p3 == 3)
+                        {
+                            total += 70;
+                        }
+                        else
+                        {
+                            total += 15;
+                        }
+                    }
+                    if (p1 == 5 & p2 == 4)
+                    {
+                        if (p1 == 5 & p2 == 4 & p3 == 4)
+                        {
+                            total += 30;
+                        }
+                        else
+                        {
+                            total += 7;
+                        }
+                    }
+                    else if (p1 == 5 & p2 == 5)
                     {
                         total += 7;
                     }
