@@ -22,6 +22,7 @@ namespace BasicSlots
         public static int p2;
         public static int p3;
         public static int p4;
+        public static int p5;
 
         // Declaring variables for display
         public static long credits = 100;
