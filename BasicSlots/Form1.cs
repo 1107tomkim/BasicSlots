@@ -66,9 +66,9 @@ namespace BasicSlots
                 // randomizing the picture generator
                 for (int i = 0; i < 10; i++)
                 {
-                    p1 = IntUtil.Random(1, 5);
-                    p2 = IntUtil.Random(1, 5);
-                    p3 = IntUtil.Random(1, 5);
+                    p1 = IntUtil.Random(1, 6);
+                    p2 = IntUtil.Random(1, 6);
+                    p3 = IntUtil.Random(1, 6);
                 }
 
 
