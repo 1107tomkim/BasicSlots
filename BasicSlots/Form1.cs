@@ -142,6 +142,21 @@ namespace BasicSlots
                         total += 7;
                     }
                 }
+                else if (p1 == 5)
+                {
+                    if (p1 == 5 & p2 == 1)
+                    {
+                        total += 7;
+                    }
+                    else if (p1 == 5 & p2 == 2)
+                    {
+                        total += 7;
+                    }
+                    else
+                    {
+                        total += 7;
+                    }
+                }
                 else
                 {
                     total += 0;
