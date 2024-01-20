@@ -95,6 +95,7 @@ namespace BasicSlots
 
                 // Constructing the logic for paytable.
                 // If first 2 slot matches, payout 3 creds.
+                // need to figure out how to get the proper calculation for the odds in hitting certain symbols.
                 if (p1 == 1 & p2 == 1 || p1 == 1 & p2 == 5)
                 {
                     if (p1 == 1 & p2 == 1 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 5 || p1 == 1 & p2 == 1 & p3 == 5)
@@ -233,7 +234,7 @@ namespace BasicSlots
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            int bet = 0;
         }
     }
 }
