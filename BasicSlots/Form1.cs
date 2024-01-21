@@ -27,7 +27,7 @@ namespace BasicSlots
         // Declaring variables for display
         public static long credits = 100;
         public static long total = 0;
-        public static int bet = 0;
+        public static int bet = 1;
 
         private void Form1_Load(object sender, EventArgs e)
         {
