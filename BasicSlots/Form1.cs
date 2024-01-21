@@ -117,11 +117,11 @@ namespace BasicSlots
                 {
                     if (p1 == 1 & p2 == 1 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 5 || p1 == 1 & p2 == 1 & p3 == 5)
                     {
-                        total += 10;
+                        total += (bet * 7);
                     }
                     else
                     {
-                        total += 5;
+                        total += (bet * 1);
                     }
                 }
 
@@ -129,11 +129,11 @@ namespace BasicSlots
                 {
                     if (p1 == 2 & p2 == 2 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 5 || p1 == 2 & p2 == 2 & p3 == 5)
                     {
-                        total += 20;
+                        total += (bet * 9);
                     }
                     else
                     {
-                        total += 7;
+                        total += (bet * 2);
                     }
                 }
 
@@ -141,11 +141,11 @@ namespace BasicSlots
                 {
                     if (p1 == 3 & p2 == 3 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 5 || p1 == 3 & p2 == 3 & p3 == 5)
                     {
-                        total += 70;
+                        total += (bet * 20);
                     }
                     else
                     {
-                        total += 15;
+                        total += (bet * 5);
                     }
                 }
 
@@ -153,11 +153,11 @@ namespace BasicSlots
                 {
                     if (p1 == 4 & p2 == 4 & p3 == 4 || p1 == 4 & p2 == 5 & p3 == 4 || p1 == 4 & p2 == 5 & p3 == 5 || p1 == 4 & p2 == 4 & p3 == 5)
                     {
-                        total += 30;
+                        total += (bet * 11);
                     }
                     else
                     {
-                        total += 7;
+                        total += (bet * 3);
                     }
                 }
                 else if (p1 == 5)
