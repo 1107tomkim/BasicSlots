@@ -58,8 +58,14 @@ namespace BasicSlots
         //Allows the user to set the bet size on click
         private void button2_Click(object sender, EventArgs e)
         {
-            if (bet <= 0)
+            if (bet < 10 && bet >= 0)
             {
+                bet += 1;
+                label2.Text = "Bet: " + bet.ToString();
+            }
+            else if (bet == 10)
+            {
+                bet = 1;
                 label2.Text = "Bet: " + bet.ToString();
             }
         }
