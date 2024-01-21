@@ -248,5 +248,14 @@ namespace BasicSlots
                 MessageBox.Show("Insufficient Credits.");
             }
         }
+
+
+        // MAX BET
+        // Button which when clicked, you will be betting max possible bet
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bet = 10;
+            label2.Text = "Bet: " + bet.ToString();
+        }
     }
 }
