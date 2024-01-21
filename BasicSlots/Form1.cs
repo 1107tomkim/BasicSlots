@@ -27,7 +27,7 @@ namespace BasicSlots
         // Declaring variables for display
         public static long credits = 100;
         public static long total = 0;
-        public static int bet = 5;
+        public static int bet = 0;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -53,6 +53,17 @@ namespace BasicSlots
                 return random.Next(mix, max);
             }
         }
+
+        //BET SIZE
+        //Allows the user to set the bet size on click
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (bet <= 0)
+            {
+                label2.Text = "Bet: " + bet.ToString();
+            }
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -191,19 +202,19 @@ namespace BasicSlots
                     }
                     else if (p1 == 5 & p2 == 5)
                     {
-                        if(p3 == 1)
+                        if (p3 == 1)
                         {
                             total += 10;
                         }
-                        else if(p3 == 2)
+                        else if (p3 == 2)
                         {
                             total += 20;
                         }
-                        else if(p3 == 3)
+                        else if (p3 == 3)
                         {
                             total += 70;
                         }
-                        else if(p3 == 4)
+                        else if (p3 == 4)
                         {
                             total += 40;
                         }
@@ -230,11 +241,6 @@ namespace BasicSlots
             {
                 MessageBox.Show("Insufficient Credits.");
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int bet = 0;
         }
     }
 }
