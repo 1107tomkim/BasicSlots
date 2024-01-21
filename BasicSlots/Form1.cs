@@ -18,11 +18,11 @@ namespace BasicSlots
         }
 
         // Declare each item of the photos
-        public static int p1;
-        public static int p2;
-        public static int p3;
-        public static int p4;
-        public static int p5;
+        public static int p1; //  Lowest Symbol Strawberry
+        public static int p2; // Oranges
+        public static int p3; // 7's
+        public static int p4; // Bells
+        public static int p5; // Wild
 
         // Declaring variables for display
         public static long credits = 100;
