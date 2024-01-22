@@ -160,6 +160,7 @@ namespace BasicSlots
                         total += (bet * 3);
                     }
                 }
+                // Need to change the payout logic to be multiplicative for the Wilds
                 else if (p1 == 5)
                 {
                     if (p1 == 5 & p2 == 1)
