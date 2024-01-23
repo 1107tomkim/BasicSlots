@@ -91,6 +91,9 @@ namespace BasicSlots
                     p1 = IntUtil.Random(1, 6);
                     p2 = IntUtil.Random(1, 6);
                     p3 = IntUtil.Random(1, 6);
+                    p4 = IntUtil.Random(1, 6);
+                    p5 = IntUtil.Random(1, 6);
+                    p6 = IntUtil.Random(1, 6);
                 }
 
 
@@ -104,19 +107,29 @@ namespace BasicSlots
                 if (pictureBox2.Image != null)
                 {
                     pictureBox2.Image.Dispose();
-                    pictureBox2.Image = Image.FromFile(p1.ToString() + ".png");
+                    pictureBox2.Image = Image.FromFile(p2.ToString() + ".png");
                 }
 
                 if (pictureBox3.Image != null)
                 {
                     pictureBox3.Image.Dispose();
-                    pictureBox3.Image = Image.FromFile(p1.ToString() + ".png");
+                    pictureBox3.Image = Image.FromFile(p3.ToString() + ".png");
                 }
-/*                if(pictureBox4.Image != null)
+                if (pictureBox4.Image != null)
                 {
                     pictureBox4.Image.Dispose();
-                    pictureBox4 = Image.FromFile()
-                }*/
+                    pictureBox4.Image = Image.FromFile(p4.ToString() + ".png");
+                }
+                if (pictureBox5.Image != null)
+                {
+                    pictureBox5.Image.Dispose();
+                    pictureBox5.Image = Image.FromFile(p5.ToString() + ".png");
+                }
+                if (pictureBox6.Image != null)
+                {
+                    pictureBox6.Image.Dispose();
+                    pictureBox6.Image = Image.FromFile(p6.ToString() + ".png");
+                }
 
                 total = 0;
 
