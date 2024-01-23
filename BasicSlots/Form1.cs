@@ -17,12 +17,14 @@ namespace BasicSlots
             InitializeComponent();
         }
 
-        // Declare each item of the photos
-        public static int p1; //  Lowest Symbol Strawberry
-        public static int p2; // Oranges
-        public static int p3; // 7's
-        public static int p4; // Bells
-        public static int p5; // Wild
+        // variable stored to declare slots of imagebox.
+        // p1 ~ p6 means that there will be 6 boxes with images being held.
+        public static int p1; 
+        public static int p2; 
+        public static int p3; 
+        public static int p4; 
+        public static int p5;
+        public static int p6;
 
         // Declaring variables for display
         public static long credits = 100;
@@ -35,6 +37,9 @@ namespace BasicSlots
             pictureBox1.Image = Image.FromFile("1.png");
             pictureBox2.Image = Image.FromFile("1.png");
             pictureBox3.Image = Image.FromFile("1.png");
+            pictureBox4.Image = Image.FromFile("1.png");
+            pictureBox5.Image = Image.FromFile("1.png");
+            pictureBox6.Image = Image.FromFile("1.png");
         }
 
         // Random Number Generator
@@ -99,20 +104,30 @@ namespace BasicSlots
                 if (pictureBox2.Image != null)
                 {
                     pictureBox2.Image.Dispose();
-                    pictureBox2.Image = Image.FromFile(p2.ToString() + ".png");
+                    pictureBox2.Image = Image.FromFile(p1.ToString() + ".png");
                 }
 
                 if (pictureBox3.Image != null)
                 {
                     pictureBox3.Image.Dispose();
-                    pictureBox3.Image = Image.FromFile(p3.ToString() + ".png");
+                    pictureBox3.Image = Image.FromFile(p1.ToString() + ".png");
                 }
+/*                if(pictureBox4.Image != null)
+                {
+                    pictureBox4.Image.Dispose();
+                    pictureBox4 = Image.FromFile()
+                }*/
 
                 total = 0;
 
+
                 // Constructing the logic for paytable.
-                // If first 2 slot matches, payout 3 creds.
-                // need to figure out how to get the proper calculation for the odds in hitting certain symbols.
+                // Symbols 
+                // 1 = Strawberry
+                // 2 = Oranges
+                // 3 = 7's
+                // 4 = Bells
+                // 5 = Wild
                 if (p1 == 1 & p2 == 1 || p1 == 1 & p2 == 5)
                 {
                     if (p1 == 1 & p2 == 1 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 5 || p1 == 1 & p2 == 1 & p3 == 5)
