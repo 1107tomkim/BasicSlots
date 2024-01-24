@@ -141,6 +141,7 @@ namespace BasicSlots
                 // 3 = 7's
                 // 4 = Bells
                 // 5 = Wild
+                // Is there not a better way for me to compile all of these logic and numbers for both line payouts?
                 if (p1 == 1 & p2 == 1 || p1 == 1 & p2 == 5 || p4 == 1 & p5 == 1 || p4 == 1 & p5 == 5)
                 {
                     if (p1 == 1 & p2 == 1 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 5 || p1 == 1 & p2 == 1 & p3 == 5)
