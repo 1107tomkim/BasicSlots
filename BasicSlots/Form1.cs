@@ -144,7 +144,9 @@ namespace BasicSlots
                 // Is there not a better way for me to compile all of these logic and numbers for both line payouts?
                 if (p1 == 1 & p2 == 1 || p1 == 1 & p2 == 5 || p4 == 1 & p5 == 1 || p4 == 1 & p5 == 5)
                 {
-                    if (p1 == 1 & p2 == 1 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 5 || p1 == 1 & p2 == 1 & p3 == 5)
+                    if (p1 == 1 & p2 == 1 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 1 || p1 == 1 & p2 == 5 & p3 == 5 || p1 == 1 & p2 == 1 & p3 == 5 ||
+                        p4 == 1 & p5 == 1 & p6 == 1 || p4 == 1 & p5 == 5 & p6 == 1 || p4 == 1 & p5 == 5 & p6 == 5 || p4 == 1 & p5 == 1 & p6 == 5
+                        )
                     {
                         total += (bet * 7);
                     }
@@ -156,7 +158,9 @@ namespace BasicSlots
 
                 else if (p1 == 2 & p2 == 2 || p1 == 2 & p2 == 5 || p4 == 2 & p5 == 2 || p4 == 2 & p5 == 5)
                 {
-                    if (p1 == 2 & p2 == 2 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 5 || p1 == 2 & p2 == 2 & p3 == 5)
+                    if (p1 == 2 & p2 == 2 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 5 || p1 == 2 & p2 == 2 & p3 == 5 ||
+                        p4 == 2 & p5 == 2 & p6 == 2 || p4 == 2 & p5 == 5 & p6 == 2 || p4 == 2 & p5 == 5 & p6 == 5 || p4 == 2 & p5 == 2 & p6 == 5
+                        )
                     {
                         total += (bet * 9);
                     }
@@ -168,7 +172,9 @@ namespace BasicSlots
 
                 else if (p1 == 3 & p2 == 3 || p1 == 3 & p2 == 5 || p4 == 3 & p5 == 3 || p4 == 3 & p5 == 5)
                 {
-                    if (p1 == 3 & p2 == 3 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 5 || p1 == 3 & p2 == 3 & p3 == 5)
+                    if (p1 == 3 & p2 == 3 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 5 || p1 == 3 & p2 == 3 & p3 == 5 ||
+                        p4 == 3 & p5 == 3 & p6 == 3 || p4 == 3 & p5 == 5 & p6 == 3 || p4 == 3 & p5 == 5 & p6 == 5 || p4 == 3 & p5 == 3 & p6 == 5
+                        )
                     {
                         total += (bet * 20);
                     }
@@ -178,9 +184,11 @@ namespace BasicSlots
                     }
                 }
 
-                else if (p1 == 4 & p2 == 4 || p1 == 4 & p2 == 5)
+                else if (p1 == 4 & p2 == 4 || p1 == 4 & p2 == 5 || p4 == 4 & p5 == 4 || p4 == 4 & p5 == 5)
                 {
-                    if (p1 == 4 & p2 == 4 & p3 == 4 || p1 == 4 & p2 == 5 & p3 == 4 || p1 == 4 & p2 == 5 & p3 == 5 || p1 == 4 & p2 == 4 & p3 == 5)
+                    if (p1 == 4 & p2 == 4 & p3 == 4 || p1 == 4 & p2 == 5 & p3 == 4 || p1 == 4 & p2 == 5 & p3 == 5 || p1 == 4 & p2 == 4 & p3 == 5 ||
+                        p4 == 4 & p5 == 4 & p6 == 4 || p4 == 4 & p5 == 5 & p6 == 4 || p4 == 4 & p5 == 5 & p6 == 5 || p4 == 4 & p5 == 4 & p6 == 5
+                        )
                     {
                         total += (bet * 11);
                     }
@@ -190,7 +198,7 @@ namespace BasicSlots
                     }
                 }
                 // Need to change the payout logic to be multiplicative for the Wilds
-                else if (p1 == 5)
+                else if (p1 == 5 || p4 == 5)
                 {
                     if (p1 == 5 & p2 == 1)
                     {
