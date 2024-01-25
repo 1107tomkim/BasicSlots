@@ -154,7 +154,7 @@ namespace BasicSlots
                     }
                 }
 
-                else if (p1 == 2 & p2 == 2 || p1 == 2 & p2 == 5)
+                else if (p1 == 2 & p2 == 2 || p1 == 2 & p2 == 5 || p4 == 2 & p5 == 2 || p4 == 2 & p5 == 5)
                 {
                     if (p1 == 2 & p2 == 2 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 2 || p1 == 2 & p2 == 5 & p3 == 5 || p1 == 2 & p2 == 2 & p3 == 5)
                     {
@@ -166,7 +166,7 @@ namespace BasicSlots
                     }
                 }
 
-                else if (p1 == 3 & p2 == 3 || p1 == 3 & p2 == 5)
+                else if (p1 == 3 & p2 == 3 || p1 == 3 & p2 == 5 || p4 == 3 & p5 == 3 || p4 == 3 & p5 == 5)
                 {
                     if (p1 == 3 & p2 == 3 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 3 || p1 == 3 & p2 == 5 & p3 == 5 || p1 == 3 & p2 == 3 & p3 == 5)
                     {
@@ -264,6 +264,7 @@ namespace BasicSlots
                         total += 7;
                     }
                 }
+
                 else
                 {
                     total += 0;
