@@ -148,7 +148,7 @@ namespace BasicSlots
                         p4 == 1 & p5 == 1 & p6 == 1 || p4 == 1 & p5 == 5 & p6 == 1 || p4 == 1 & p5 == 5 & p6 == 5 || p4 == 1 & p5 == 1 & p6 == 5
                         )
                     {
-                        total += (bet * 7);
+                        total += (bet * 4);
                     }
                     else
                     {
@@ -162,11 +162,11 @@ namespace BasicSlots
                         p4 == 2 & p5 == 2 & p6 == 2 || p4 == 2 & p5 == 5 & p6 == 2 || p4 == 2 & p5 == 5 & p6 == 5 || p4 == 2 & p5 == 2 & p6 == 5
                         )
                     {
-                        total += (bet * 9);
+                        total += (bet * 5);
                     }
                     else
                     {
-                        total += (bet * 2);
+                        total += (bet * 1);
                     }
                 }
 
@@ -176,11 +176,11 @@ namespace BasicSlots
                         p4 == 3 & p5 == 3 & p6 == 3 || p4 == 3 & p5 == 5 & p6 == 3 || p4 == 3 & p5 == 5 & p6 == 5 || p4 == 3 & p5 == 3 & p6 == 5
                         )
                     {
-                        total += (bet * 20);
+                        total += (bet * 10);
                     }
                     else
                     {
-                        total += (bet * 5);
+                        total += (bet * 3);
                     }
                 }
 
@@ -190,11 +190,11 @@ namespace BasicSlots
                         p4 == 4 & p5 == 4 & p6 == 4 || p4 == 4 & p5 == 5 & p6 == 4 || p4 == 4 & p5 == 5 & p6 == 5 || p4 == 4 & p5 == 4 & p6 == 5
                         )
                     {
-                        total += (bet * 11);
+                        total += (bet * 5);
                     }
                     else
                     {
-                        total += (bet * 3);
+                        total += (bet * 1);
                     }
                 }
                 // Need to change the payout logic to be multiplicative for the Wilds
@@ -202,46 +202,46 @@ namespace BasicSlots
                 {
                     if (p1 == 5 & p2 == 1 || p4 == 5 & p5 == 1)
                     {
-                        if (p1 == 5 & p2 == 1 & p3 == 1 || p1 == 5 & p2 == 1 & p3 == 5)
+                        if (p1 == 5 & p2 == 1 & p3 == 1 || p1 == 5 & p2 == 1 & p3 == 5 || p4 == 5 & p5 == 1 & p6 == 1 || p4 == 5 & p5 == 1 & p6 == 5)
                         {
-                            total += 10;
+                            total += (bet * 10);
                         }
                         else
                         {
-                            total += 7;
+                            total += (bet * 5);
                         }
                     }
                     else if (p1 == 5 & p2 == 2 || p4 == 5 & p5 == 2)
                     {
-                        if (p1 == 5 & p2 == 2 & p3 == 2 || p1 == 5 & p2 == 2 & p3 == 5)
+                        if (p1 == 5 & p2 == 2 & p3 == 2 || p1 == 5 & p2 == 2 & p3 == 5 || p4 == 5 & p5 == 2 & p6 == 2 || p4 == 5 & p5 == 2 & p6 == 5)
                         {
-                            total += 20;
+                            total += (bet * 10);
                         }
                         else
                         {
-                            total += 7;
+                            total += (bet * 5);
                         }
                     }
                     else if (p1 == 5 & p2 == 3 || p4 == 5 & p5 == 3)
                     {
-                        if (p1 == 5 & p2 == 3 & p3 == 3 || p1 == 5 & p2 == 3 & p3 == 5)
+                        if (p1 == 5 & p2 == 3 & p3 == 3 || p1 == 5 & p2 == 3 & p3 == 5 || p4 == 5 & p5 == 3 & p6 == 3 || p4 == 5 & p5 == 3 & p6 == 5)
                         {
-                            total += 70;
+                            total += (bet * 30);
                         }
                         else
                         {
-                            total += 15;
+                            total += (bet * 10);
                         }
                     }
                     else if (p1 == 5 & p2 == 4 || p4 == 5 & p5 == 4)
                     {
-                        if (p1 == 5 & p2 == 4 & p3 == 4 || p1 == 5 & p2 == 4 & p3 == 5)
+                        if (p1 == 5 & p2 == 4 & p3 == 4 || p1 == 5 & p2 == 4 & p3 == 5 || p4 == 5 & p5 == 4 & p6 == 4 || p4 == 5 & p5 == 4 & p6 == 5)
                         {
-                            total += 30;
+                            total += (bet * 10);
                         }
                         else
                         {
-                            total += 7;
+                            total += (bet * 5);
                         }
                     }
                     else if (p1 == 5 & p2 == 5 || p4 == 5 & p5 == 5)
