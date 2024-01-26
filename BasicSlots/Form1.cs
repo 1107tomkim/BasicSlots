@@ -244,6 +244,7 @@ namespace BasicSlots
                             total += (bet * 5);
                         }
                     }
+                    // need to adjust the payout sizes to be multiplicative +  add the 2nd row logic
                     else if (p1 == 5 & p2 == 5 || p4 == 5 & p5 == 5)
                     {
                         if (p3 == 1)
