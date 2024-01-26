@@ -200,7 +200,7 @@ namespace BasicSlots
                 // Need to change the payout logic to be multiplicative for the Wilds
                 else if (p1 == 5 || p4 == 5)
                 {
-                    if (p1 == 5 & p2 == 1)
+                    if (p1 == 5 & p2 == 1 || p4 == 5 & p5 == 1)
                     {
                         if (p1 == 5 & p2 == 1 & p3 == 1 || p1 == 5 & p2 == 1 & p3 == 5)
                         {
@@ -211,7 +211,7 @@ namespace BasicSlots
                             total += 7;
                         }
                     }
-                    else if (p1 == 5 & p2 == 2)
+                    else if (p1 == 5 & p2 == 2 || p4 == 5 & p5 == 2)
                     {
                         if (p1 == 5 & p2 == 2 & p3 == 2 || p1 == 5 & p2 == 2 & p3 == 5)
                         {
@@ -222,7 +222,7 @@ namespace BasicSlots
                             total += 7;
                         }
                     }
-                    else if (p1 == 5 & p2 == 3)
+                    else if (p1 == 5 & p2 == 3 || p4 == 5 & p5 == 3)
                     {
                         if (p1 == 5 & p2 == 3 & p3 == 3 || p1 == 5 & p2 == 3 & p3 == 5)
                         {
@@ -233,7 +233,7 @@ namespace BasicSlots
                             total += 15;
                         }
                     }
-                    else if (p1 == 5 & p2 == 4)
+                    else if (p1 == 5 & p2 == 4 || p4 == 5 & p5 == 4)
                     {
                         if (p1 == 5 & p2 == 4 & p3 == 4 || p1 == 5 & p2 == 4 & p3 == 5)
                         {
@@ -244,7 +244,7 @@ namespace BasicSlots
                             total += 7;
                         }
                     }
-                    else if (p1 == 5 & p2 == 5)
+                    else if (p1 == 5 & p2 == 5 || p4 == 5 & p5 == 5)
                     {
                         if (p3 == 1)
                         {
