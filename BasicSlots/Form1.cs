@@ -132,8 +132,6 @@ namespace BasicSlots
                 }
 
                 total = 0;
-
-
                 // Constructing the logic for paytable.
                 // Symbols 
                 // 1 = Strawberry
